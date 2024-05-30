@@ -1,0 +1,25 @@
+
+
+print("Let's exchange your money in USD ")
+
+pesos = int(input('What do you have left in pesos? '))
+soles = int(input('What do you have left in soles? '))
+reais = int(input('What do you have left in reais? '))
+#IN THIS MOMENT USD VALUES TO THIS VALUES
+print('Now we calculate the exhange')
+pesosToUSD = pesos * 0.060
+solesToUSD = soles * 0.27
+reaisToUSD = reais * 0.20
+print('Values exchanged in dollars:')
+
+print(pesosToUSD)
+
+print(solesToUSD)
+
+print(reaisToUSD)
+
+TotalToChange = pesosToUSD + solesToUSD + reaisToUSD
+
+print(TotalToChange)
+
+print('It works perfectly')
