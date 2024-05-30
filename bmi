@@ -1,0 +1,5 @@
+
+MyWeight = 70
+MyHeight = 160
+bmi = MyWeight / MyHeight ** 2
+print(bmi) 
