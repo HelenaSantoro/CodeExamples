@@ -1,0 +1,15 @@
+# Crea un nuovo file chiamato the_cyclone.py
+
+# Chiedi all'utente la loro altezza e il numero di crediti che possiedono, e memorizza i valori nelle variabili height e credits
+height = float(input('What is your height in cm: '))
+credits = float(input('How many credits do you have: '))
+
+# Usa una combinazione di operatori relazionali e logici per creare le regole
+if height >= 137 and credits >= 10:
+    print('Enjoy the ride!')
+elif height < 137 and credits >= 10:
+    print('You are not tall enough to ride.')
+elif height >= 137 and credits < 10:
+    print('You don\'t have enough credits.')
+else:
+    print('You have not met either requirement.')
