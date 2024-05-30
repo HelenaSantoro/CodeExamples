@@ -1,0 +1,23 @@
+
+print("Insert data to calculate Pythagorean Theorem")
+a = int(input('Enter cathetus a:'))
+
+b = int(input('Enter cathetus b:'))
+
+c = (a ** 2 + b ** 2)**0.5
+
+print(c)
+
+#Let's try Quadratic formula
+print("Insert data to Quadratic Formula")
+
+a = int(input('Enter a:'))
+
+b = int(input('Enter b:'))
+
+c = int(input('Enter c:'))
+
+x1 = (-b + (b**2 - 4* a * c)**0.5) / 2 *a
+x2 = (-b - (b**2 - 4* a * c)**0.5) / 2 *a
+print(x1)
+print(x2)
