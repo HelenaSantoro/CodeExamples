@@ -1,0 +1,6 @@
+
+for i in range(101):
+  print("I will not use Snapchat in class")
+
+
+# Per i che va da 0 a 100. MA C'È SCRITTO 101, SI MA L'INDICE INCLUDE ZERO QUINDI 101.
