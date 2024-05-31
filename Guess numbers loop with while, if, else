@@ -1,0 +1,13 @@
+guess = 0
+tries = 0  # Initialize the tries variable
+max_tries = 5  # Set the maximum number of tries
+
+# The loop will run until the guess is correct (6) or the number of tries reaches the maximum limit
+while guess != 6 and tries < max_tries:
+    guess = int(input("Guess the number:  "))
+    tries += 1  # Increment the tries variable
+
+if guess == 6:
+    print("You got it!")
+else:
+    print("Sorry, you've run out of tries.")
