@@ -1,0 +1,16 @@
+import random
+
+# Generate random values for two dice
+die1 = random.randint(1, 6)
+die2 = random.randint(1, 6)
+total = die1 + die2  # Calculate the total value of the dice
+
+# Prompt the user to guess the total value and store the guess in a variable
+guess = int(input("What is the total (2-12)? "))
+
+while guess != total:
+  print("Incorrect. Try again.")
+  guess = int(input("What is the total (2-12)? "))
+
+# If the correct total value is guessed, print a message
+print("You got it!")
