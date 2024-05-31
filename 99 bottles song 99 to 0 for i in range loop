@@ -1,0 +1,6 @@
+# il range parte da 99 va a 0, decrementa di -1 ecco spiegato cosa c'è nelle parentesi
+
+# String concatenation
+
+for i in range(99, 0, -1):
+  print(f'{i} bottles of beer on the wall {i} bottles of beer Take one down, pass it around')
