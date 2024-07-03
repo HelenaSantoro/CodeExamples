@@ -1,0 +1,44 @@
+# Write code below 💖
+# drive_thru.py
+
+# Define the menu as a dictionary
+menu = {
+    1: '🍔 Cheeseburger',
+    2: '🍟 Fries',
+    3: '🥤 Soda',
+    4: '🍦 Ice Cream',
+    5: '🍪 Cookie'
+}
+
+def get_item(item_number):
+    """
+    Returns the name of the item based on the item number.
+    If the item number is not in the menu, returns a message indicating invalid choice.
+    """
+    return menu.get(item_number, "Invalid item number")
+
+def welcome():
+    """
+    Displays the welcome message and the menu.
+    """
+    print("Welcome to Fast Food Drive-Thru!")
+    print("Here is our menu:")
+    for number, item in menu.items():
+        print(f"{number}. {item}")
+
+def main():
+    """
+    Main program to take user input and display the ordered item.
+    """
+    welcome()
+    try:
+        item_number = int(input("Please enter the number of the item you want to order: "))
+        item = get_item(item_number)
+        print(f"You ordered: {item}")
+    except ValueError:
+        print("Invalid input! Please enter a number.")
+
+# Call the main function if this script is run directly
+if __name__ == "__main__":
+    main()
+
